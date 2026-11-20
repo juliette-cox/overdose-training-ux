@@ -1,0 +1,65 @@
+
+body {
+    background-color: #f7f3fc;
+    text-align: center;
+    padding: 40px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Redaction 50", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: clamp(1.8rem, 6vw, 4rem);
+    text-align: center;
+}
+
+p {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* handle page class activity */
+
+.page {
+    display: none;
+}
+
+.page.visible {
+    display: block;
+}
+
+/* nav details */
+
+button {
+    background-color: #7659a6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "DM Mono", monospace;
+    box-shadow: 4px 4px 0px #000;
+}
+
+button:hover {
+    background-color: #5c408a;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
