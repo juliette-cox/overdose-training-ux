@@ -1,11 +1,13 @@
 const pages = document.querySelectorAll(".page"); //list of all pages 
 
 let currentPage = 0;
+let footerCount=1;
 
 function nextPage() {
     if (currentPage < pages.length - 1) { //not at the end page yet 
         pages[currentPage].classList.remove("visible"); //remove visibility of this page 
         currentPage++;
+        footerCount++;
         pages[currentPage].classList.add("visible"); //make next page visible 
         updateButtons(); 
     }
@@ -15,6 +17,7 @@ function previousPage() { //same as before ^^, but decrement instead
     if (currentPage > 0) {
         pages[currentPage].classList.remove("visible");
         currentPage--; 
+        footerCount--;
         pages[currentPage].classList.add("visible");
         updateButtons();
     }
@@ -32,6 +35,8 @@ function updateButtons() {
     } else {
         document.getElementById("next-button").style.display = "inline-block";
     }
+    document.getElementById("progress").textContent = `${footerCount}/6`;
 }
 
+//to initialize
 updateButtons();

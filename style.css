@@ -5,9 +5,20 @@ body {
     padding: 40px;
     min-height: 100vh;
     min-height: 100dvh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;
+}
+
+
+/*adding a main container for better page organization*/
+.study-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 h1 {
@@ -29,8 +40,8 @@ p {
     text-align: center;
 }
 
-/* handle page class activity */
 
+/* handle page class activity */
 .page {
     display: none;
 }
@@ -39,8 +50,8 @@ p {
     display: block;
 }
 
-/* nav details */
 
+/* nav details */
 button {
     background-color: #7659a6;
     color: white;
@@ -63,3 +74,16 @@ button:hover {
     margin-top: 30px;
 }
 
+/*footer for progress*/
+footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+footer p {
+    font-family: "DM Mono", monospace;
+    font-size: clamp(1rem, 2vw, 1rem);
+    color: #65576b;
+    margin: 0;
+    padding: 7px;
+}
