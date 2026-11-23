@@ -9,7 +9,8 @@ function nextPage() {
         currentPage++;
         footerCount++;
         pages[currentPage].classList.add("visible"); //make next page visible 
-        updateButtons(); 
+        updateButtons();
+        window.scrollTo(0, 0);
     }
 }
 
@@ -20,6 +21,7 @@ function previousPage() { //same as before ^^, but decrement instead
         footerCount--;
         pages[currentPage].classList.add("visible");
         updateButtons();
+        window.scrollTo(0, 0);
     }
 }
 
