@@ -12,9 +12,10 @@ overdose prevention and response training:
 - **Interactive Prototype:** A scenario-based prototype
   designed in Figma.
 
-  Participants complete both trainings and then provide feedback through brief questionnares.
+Participants complete both trainings and then provide feedback through brief questionnares.
 
-  ## Built With 
+
+## Built With 
 
   - HTML, CSS, Javascript
   - Figma
